@@ -1,6 +1,7 @@
 #include "sanskrit.h"
 
 purnaAnka mukhya(shunya) {
-    vaach("Hello world\n");
+    dhruva sthir = 5;
+    vaach("%d\n", sthir);
     parinam 0;
 }
