@@ -1,6 +1,5 @@
 #include <sanskrit.h>
 
-
 purnaAnka vidhiSamaPariksha(purnaAnka sankhya) {
     yadi (sankhya % 2 == 0) {
         parinam 1;
@@ -10,9 +9,15 @@ purnaAnka vidhiSamaPariksha(purnaAnka sankhya) {
 
 purnaAnka mukhya(shunya) {
     purnaAnka anka;
-    kuru{
-        vaach("Anka uvaachah\n");
-        shrun("%d", &anka);
-    }yavad(anka < 1);
+
+    vaach("Anka uvaachah: ");
+    shrun("%d", &anka);
+
+    yadi (vidhiSamaPariksha(anka)) {
+        vaach("%d sama anka asti.\n", anka);
+    } anyatha {
+        vaach("%d vishama anka asti.\n", anka);
+    }
+
     parinam 0;
 }
