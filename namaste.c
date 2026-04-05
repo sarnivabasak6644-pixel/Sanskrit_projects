@@ -1,4 +1,6 @@
 #include <sanskrit.h>
+
+
 purnaAnka vidhiSamaPariksha(purnaAnka sankhya) {
     yadi (sankhya % 2 == 0) {
         parinam 1;
